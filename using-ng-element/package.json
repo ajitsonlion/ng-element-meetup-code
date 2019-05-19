@@ -1,0 +1,22 @@
+{
+  "name": "meetup-ng-elements",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ajitsonlion/ng-element-meetup-code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ajitsonlion/ng-element-meetup-code/issues"
+  },
+  "homepage": "https://gitlab.com/ajitsonlion/ng-element-meetup-code#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

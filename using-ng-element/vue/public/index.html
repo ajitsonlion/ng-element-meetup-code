@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Hello Vue!</title>
+    <style>
+        body {
+            margin: 10px;
+            display: flex;
+            flex-flow: wrap;
+        }
+
+        ng-element {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but vue1 doesn't work properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/webcomponents-bundle.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/webcomponents-loader.js"></script>
+<script src="./ng-element-es2015.js" type="module"></script>
+<script src="./ng-element-es5.js" nomodule></script>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Element</title>
+
+    <style>
+
+        body {
+            display: flex;
+        }
+
+        .wrapper {
+            width: 350px;
+            height: 300px;
+            border: 20px green solid;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 100px auto auto;
+            text-align: center;
+        }
+
+        p {
+            margin: auto;
+        }
+
+        my-custom-tag {
+            background: #8ec5fc;
+            width: 100%;
+            border: 5px black dotted;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<!--
+A custom element can't be self-closing.
+For example, you can't write a custom element like this: <custom-element/>. It should always be written like this: <custom-element></custom-element>.
+-->
+
+
+<div class="wrapper">
+    <my-custom-tag id="myTag" increment="2"></my-custom-tag>
+
+</div>
+
+<script src="../ce/ce.js"></script>
+
+
+</body>
+</html>

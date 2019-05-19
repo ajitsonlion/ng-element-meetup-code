@@ -1,0 +1,11 @@
+.wrapper {
+  text-align: center;
+  background: orange;
+  display: block;
+  border: 2px green solid;
+}
+
+h1 {
+  font-size: 35px;
+  color: red;
+}

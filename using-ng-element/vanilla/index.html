@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello VanillaJS!</title>
+
+    <style>
+        body {
+            margin: 10px;
+            display: flex;
+            flex-flow: wrap;
+        }
+
+        ng-element {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p id="message">Hello VanillaJS!</p>
+    <ng-element id="nge" increment="2"></ng-element>
+</div>
+
+
+<script src="../dist/ng-element.js"></script>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        const messageEl = document.getElementById('message');
+        const ng2 = document.getElementById('nge');
+        ng2.addEventListener('doAdd', e => {
+
+            console.log(e);
+            if (e.detail % 10 === 0) {
+                messageEl.innerText = messageEl.innerText.split('').reverse().join('');
+                ng2.time = new Date();
+            }
+
+        });
+    });
+</script>
+
+</body>
+</html>

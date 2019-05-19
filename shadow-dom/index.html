@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shadow DOM</title>
+<style>
+    h3{color: chocolate;}
+    p{color: orange}
+</style>
+</head>
+<body>
+<div id="app">
+    <h3 id="sameId">In Regular DOM</h3>
+    <div id="container"></div>
+    <h3>In Regular DOM</h3>
+    <p>Meetup#10</p>
+</div>
+<script>
+    const container = document.getElementById('container');
+    const containerShadow = container.attachShadow({mode: 'open'});
+    containerShadow.innerHTML = `
+ <style>
+     p{font-size:xx-large;}
+ </style>
+  <h3 id="sameId">In Shadow DOM</h3>
+  <div>
+  <p id="inShadow">Say Please?</p>
+  </div>
+  `
+</script>
+</body>
+</html>

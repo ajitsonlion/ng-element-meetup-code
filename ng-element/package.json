@@ -1,0 +1,42 @@
+{
+  "name": "ng-element",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --port 5000",
+    "build:debug": "npm run build -- --source-map true --build-optimizer false --optimization false",
+    "build": "ng build --prod --output-hashing none",
+    "build:elements": "npm run build && node build-elements.js"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~8.0.0-rc.4",
+    "@angular/common": "~8.0.0-rc.4",
+    "@angular/compiler": "~8.0.0-rc.4",
+    "@angular/core": "~8.0.0-rc.4",
+    "@angular/elements": "^8.0.0-rc.4",
+    "@angular/forms": "~8.0.0-rc.4",
+    "@angular/platform-browser": "~8.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "~8.0.0-rc.4",
+    "@angular/router": "~8.0.0-rc.4",
+    "core-js": "^2.5.4",
+    "rxjs": "~6.5.2",
+    "tslib": "^1.9.0",
+    "zone.js": "~0.9.0",
+    "document-register-element": "^1.7.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.800.0-rc.4",
+    "@angular/cli": "~8.0.0-rc.4",
+    "@angular/compiler-cli": "~8.0.0-rc.4",
+    "@angular/language-service": "~8.0.0-rc.4",
+    "@types/node": "~8.9.4",
+    "codelyzer": "^5.0.1",
+    "concat": "^1.0.3",
+    "fs-extra": "^6.0.1",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.16.0",
+    "typescript": "~3.4.5"
+  }
+}
