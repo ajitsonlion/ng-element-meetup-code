@@ -25,9 +25,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              "../dist/ng-element.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
