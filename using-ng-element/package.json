@@ -17,6 +17,6 @@
   },
   "homepage": "https://gitlab.com/ajitsonlion/ng-element-meetup-code#readme",
   "dependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.2"
   }
 }
